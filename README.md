@@ -1,5 +1,7 @@
 # eslint-config-mc
 
+[![Build Status](https://travis-ci.org/mikechau/eslint-config-mc.svg?branch=master)](https://travis-ci.org/mikechau/eslint-config-mc)
+
 Based on [eslint-airbnb-config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb). Provides a statically built eslint config file in the `dist` dir.
 
 ## Installing
