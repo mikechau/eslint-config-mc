@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "description": "eslint config based on Airbnb's style, with support for an all warning config",
   "main": "index.js",
+  "files": [
+    "dist",
+    "src",
+    "index.js",
+    "warning.js"
+  ],
   "scripts": {
     "test": "ava --verbose",
     "lint": "eslint ./src ./util ./test ./dist index.js",
