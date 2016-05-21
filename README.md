@@ -1,6 +1,6 @@
 # eslint-config-mc
 
-[![npm version](https://badge.fury.io/js/eslint-config-mc.svg)](https://badge.fury.io/js/eslint-config-mc) [![Dependency Status](https://david-dm.org/mikechau/eslint-config-mc.svg)](https://david-dm.org/mikechau/eslint-config-mc) [![devDependency Status](https://david-dm.org/mikechau/eslint-config-mc/dev-status.svg)](https://david-dm.org/mikechau/eslint-config-mc#info=devDependencies) [![Build Status](https://travis-ci.org/mikechau/eslint-config-mc.svg?branch=master)](https://travis-ci.org/mikechau/eslint-config-mc)
+[![npm version](https://badge.fury.io/js/eslint-config-mc.svg)](https://badge.fury.io/js/eslint-config-mc) [![Build Status](https://travis-ci.org/mikechau/eslint-config-mc.svg?branch=master)](https://travis-ci.org/mikechau/eslint-config-mc) [![Dependency Status](https://david-dm.org/mikechau/eslint-config-mc.svg)](https://david-dm.org/mikechau/eslint-config-mc) [![devDependency Status](https://david-dm.org/mikechau/eslint-config-mc/dev-status.svg)](https://david-dm.org/mikechau/eslint-config-mc#info=devDependencies)
 
 Based on [eslint-airbnb-config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb). Provides a statically built eslint config file in the `dist` dir.
 
