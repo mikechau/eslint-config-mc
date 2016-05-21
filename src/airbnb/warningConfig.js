@@ -10,4 +10,3 @@ var template = JSON
 var warningConfig = JSON.parse(template);
 
 module.exports = warningConfig;
-

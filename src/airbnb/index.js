@@ -7,4 +7,3 @@ module.exports = {
   config: config,
   warningConfig: warningConfig
 };
-

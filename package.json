@@ -5,7 +5,6 @@
   "main": "index.js",
   "files": [
     "dist",
-    "src",
     "index.js",
     "warning.js"
   ],

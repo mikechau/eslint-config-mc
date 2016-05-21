@@ -37,4 +37,3 @@ var config = _.merge(
 );
 
 module.exports = config;
-
