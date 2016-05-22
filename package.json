@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mc",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "eslint config based on Airbnb's style, with support for an all warning config",
   "main": "index.js",
   "files": [
