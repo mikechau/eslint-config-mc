@@ -1,39 +1,20 @@
 'use strict';
 
+var path = require('path');
 var _ = require('lodash');
+var CLIEngine = require('eslint').CLIEngine;
 
-// Base
-var bestPractices = require('eslint-config-airbnb-base/rules/best-practices');
-var errors = require('eslint-config-airbnb-base/rules/errors');
-var legacy = require('eslint-config-airbnb-base/rules/legacy');
-var node = require('eslint-config-airbnb-base/rules/node');
-var style = require('eslint-config-airbnb-base/rules/style');
-var variables = require('eslint-config-airbnb-base/rules/variables');
-var es6 = require('eslint-config-airbnb-base/rules/es6');
+var cli = new CLIEngine({
+  configFile: require.resolve('eslint-config-airbnb'),
+  useEslintrc: false
+});
 
-// React
-var strict = require('eslint-config-airbnb-base/rules/strict');
-var react = require('eslint-config-airbnb/rules/react');
-var react_a11y = require('eslint-config-airbnb/rules/react-a11y'); // eslint-disable-line camelcase
+var rawConfig = cli.getConfigForFile(path.join(__dirname, '../dummy.js'));
 
-// Configs
-var baseConfig = _.omit(require('eslint-config-airbnb-base'), 'extends');
-var reactConfig = _.omit(require('eslint-config-airbnb'), 'extends');
+var config = _.omit(rawConfig, 'extends');
 
-var config = _.merge(
-  {},
-  bestPractices,
-  errors,
-  legacy,
-  node,
-  style,
-  variables,
-  es6,
-  strict,
-  react,
-  react_a11y, // eslint-disable-line camelcase
-  baseConfig,
-  reactConfig
-);
+if (config.parser === '') {
+  delete config.parser;
+}
 
 module.exports = config;

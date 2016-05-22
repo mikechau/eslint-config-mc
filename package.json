@@ -12,6 +12,7 @@
     "test": "ava --verbose",
     "lint": "eslint ./src ./util ./test ./dist index.js",
     "build": "./scripts/build.sh",
+    "build:fixtures": "./scripts/build-fixtures.sh",
     "check": "npm run lint && npm run test"
   },
   "repository": {
