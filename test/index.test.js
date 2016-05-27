@@ -2,15 +2,15 @@
 
 var path = require('path');
 var test = require('ava');
-var _ = require('lodash');
+var omit = require('lodash/omit');
 
 var airbnbConfig = require('./fixtures/eslint-config-airbnb');
-var expectedOutput = _.omit(airbnbConfig, 'extends');
+var expectedOutput = omit(airbnbConfig, 'extends');
 
 var getEslintConfig = require('./helpers/getEslintConfig');
 var configPath = path.join(__dirname, '../index.js');
 var rawConfig = getEslintConfig(configPath);
-var config = _.omit(rawConfig, 'extends');
+var config = omit(rawConfig, 'extends');
 
 test('returns expected eslint config', function(t) {
   t.plan(8);
