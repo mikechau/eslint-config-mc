@@ -1,8 +1,10 @@
+'use strict';
+
 module.exports = {
-  "plugins": [
-    "ava"
+  plugins: [
+    'ava'
   ],
-  "extends": [
-    "plugin:ava/recommended"
+  extends: [
+    'plugin:ava/recommended'
   ]
 };
