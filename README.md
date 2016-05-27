@@ -31,7 +31,7 @@ Edit your `.eslintrc.*` and extend from the appropriate config.
 
 Example:
 
-```json
+```javascript
 // .eslintrc.json
 {
   "extends": "eslint-config-mc"
