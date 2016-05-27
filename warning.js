@@ -1,5 +1,7 @@
 'use strict';
 
-var warningConfig = require('./dist/airbnb/warningConfig');
-
-module.exports = warningConfig;
+module.exports = {
+  extends: [
+    './dist/airbnb/warningConfig.json'
+  ]
+};

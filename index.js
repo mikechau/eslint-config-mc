@@ -1,5 +1,7 @@
 'use strict';
 
-var airbnbConfig = require('./dist/airbnb/config');
-
-module.exports = airbnbConfig;
+module.exports = {
+  extends: [
+    './dist/airbnb/config.json'
+  ]
+};
