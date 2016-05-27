@@ -6,7 +6,7 @@ var path = require('path');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
 
-['airbnb', 'ava'].forEach(function(configName) {
+['airbnb', 'ava', 'es5'].forEach(function(configName) {
 
   var config = require('../src/' + configName);
 
