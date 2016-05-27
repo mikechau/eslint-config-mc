@@ -7,24 +7,36 @@ Based on [eslint-airbnb-config](https://github.com/airbnb/javascript/tree/master
 ## Installing
 
 ```bash
+# Required dependencies
 npm install --save-dev eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint
 
+# Optional dependencies
+npm install --save-dev eslint-plugin-ava
+
+# Install
 npm install --save-dev eslint-config-mc
 ```
 
 ## Usage
 
-### eslint-config-mc
+### Configs
 
-This is the default config, which will raise errors for violations.
+- `eslint-config-mc` - The default config, raises errors for violations.
+- `eslint-config-mc/warning` - The default config, but will raise warnings instead of errors.
+- `eslint-config-mc/es5` - Linting for es5 only, raises errors.
+- `eslint-config-mc/es5-warning` - Linting for es5 only, raises warnings.
+- `eslint-config-mc/ava` - AVA config, raises errors.
 
-Edit your `.eslintrc.*` and add `"extends": "eslint-config-mc"`.
+Edit your `.eslintrc.*` and extend from the appropriate config.
 
-### eslint-config-mc/warning
+Example:
 
-This is the same config, but instead of raising errors, it will raise warnings.
-
-Edit your `.eslintrc.*` and add `"extends": "eslint-config-mc/warning"`.
+```json
+// .eslintrc.json
+{
+  "extends": "eslint-config-mc"
+}
+```
 
 ## Development
 
