@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: [
-    'airbnb-base/legacy',
+    'airbnb',
     require.resolve('../customrc')
   ]
 };

@@ -1088,7 +1088,7 @@
   },
   "extends": [
     "airbnb-base/legacy",
-    "/home/mike/code/github/eslint-config-mc/node_modules/eslint-config-airbnb-base/rules/errors.js",
+    "/home/mike/code/github/eslint-config-mc/src/customrc.js",
     "/home/mike/code/github/eslint-config-mc/node_modules/eslint-config-airbnb-base/rules/legacy.js",
     "/home/mike/code/github/eslint-config-mc/node_modules/eslint-config-airbnb-base/rules/node.js",
     "/home/mike/code/github/eslint-config-mc/node_modules/eslint-config-airbnb-base/rules/style.js",

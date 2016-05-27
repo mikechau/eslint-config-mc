@@ -1085,7 +1085,7 @@
     "space-before-function-paren": [
       1,
       {
-        "anonymous": "always",
+        "anonymous": "never",
         "named": "never"
       }
     ],
@@ -1453,8 +1453,8 @@
     }
   },
   "extends": [
-    "/home/mike/code/github/eslint-config-mc/node_modules/eslint-config-airbnb-base/index.js",
-    "/home/mike/code/github/eslint-config-mc/node_modules/eslint-config-airbnb-base/rules/strict.js",
+    "airbnb",
+    "/home/mike/code/github/eslint-config-mc/src/customrc.js",
     "/home/mike/code/github/eslint-config-mc/node_modules/eslint-config-airbnb/rules/react.js",
     "/home/mike/code/github/eslint-config-mc/node_modules/eslint-config-airbnb/rules/react-a11y.js",
     "/home/mike/code/github/eslint-config-mc/node_modules/eslint-config-airbnb-base/rules/style.js",
