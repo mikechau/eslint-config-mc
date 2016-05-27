@@ -3,9 +3,9 @@
 var test = require('ava');
 var omit = require('lodash/omit');
 
-var config = require('../src/airbnb');
-var baseFixture = require('./fixtures/eslint-config-airbnb');
-var warningFixture = require('./fixtures/eslint-config-airbnb-warning');
+var config = require('../../src/airbnb');
+var baseFixture = require('../fixtures/eslint-config-airbnb');
+var warningFixture = require('../fixtures/eslint-config-airbnb-warning');
 
 test('base config matches expected eslint config', function(t) {
   t.plan(8);

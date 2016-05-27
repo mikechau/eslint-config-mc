@@ -4,11 +4,11 @@ var path = require('path');
 var test = require('ava');
 var omit = require('lodash/omit');
 
-var airbnbConfig = require('./fixtures/eslint-config-airbnb');
+var airbnbConfig = require('./fixtures/eslint-config-airbnb-warning');
 var expectedOutput = omit(airbnbConfig, 'extends');
 
 var getEslintConfig = require('./helpers/getEslintConfig');
-var configPath = path.join(__dirname, '../index.js');
+var configPath = path.join(__dirname, '../warning.js');
 var rawConfig = getEslintConfig(configPath);
 var config = omit(rawConfig, 'extends');
 

@@ -1,0 +1,106 @@
+{
+  "globals": {
+    "Array": false,
+    "ArrayBuffer": false,
+    "Boolean": false,
+    "constructor": false,
+    "DataView": false,
+    "Date": false,
+    "decodeURI": false,
+    "decodeURIComponent": false,
+    "encodeURI": false,
+    "encodeURIComponent": false,
+    "Error": false,
+    "escape": false,
+    "eval": false,
+    "EvalError": false,
+    "Float32Array": false,
+    "Float64Array": false,
+    "Function": false,
+    "hasOwnProperty": false,
+    "Infinity": false,
+    "Int16Array": false,
+    "Int32Array": false,
+    "Int8Array": false,
+    "isFinite": false,
+    "isNaN": false,
+    "isPrototypeOf": false,
+    "JSON": false,
+    "Map": false,
+    "Math": false,
+    "NaN": false,
+    "Number": false,
+    "Object": false,
+    "parseFloat": false,
+    "parseInt": false,
+    "Promise": false,
+    "propertyIsEnumerable": false,
+    "Proxy": false,
+    "RangeError": false,
+    "ReferenceError": false,
+    "Reflect": false,
+    "RegExp": false,
+    "Set": false,
+    "String": false,
+    "Symbol": false,
+    "SyntaxError": false,
+    "System": false,
+    "toLocaleString": false,
+    "toString": false,
+    "TypeError": false,
+    "Uint16Array": false,
+    "Uint32Array": false,
+    "Uint8Array": false,
+    "Uint8ClampedArray": false,
+    "undefined": false,
+    "unescape": false,
+    "URIError": false,
+    "valueOf": false,
+    "WeakMap": false,
+    "WeakSet": false
+  },
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "ava/assertion-arguments": "error",
+    "ava/assertion-message": [
+      "off",
+      "always"
+    ],
+    "ava/max-asserts": [
+      "off",
+      5
+    ],
+    "ava/no-cb-test": "off",
+    "ava/no-identical-title": "error",
+    "ava/no-ignored-test-files": "error",
+    "ava/no-invalid-end": "error",
+    "ava/no-only-test": "error",
+    "ava/no-skip-assert": "error",
+    "ava/no-skip-test": "error",
+    "ava/no-statement-after-end": "error",
+    "ava/no-todo-test": "warn",
+    "ava/no-unknown-modifiers": "error",
+    "ava/prefer-power-assert": "off",
+    "ava/test-ended": "error",
+    "ava/test-title": [
+      "error",
+      "if-multiple"
+    ],
+    "ava/use-t-well": "error",
+    "ava/use-t": "error",
+    "ava/use-test": "error",
+    "ava/use-true-false": "error"
+  },
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "ava"
+  ],
+  "extends": [
+    "plugin:ava/recommended"
+  ]
+}
