@@ -13,6 +13,7 @@
     "lint": "eslint ./src ./test ./dist index.js",
     "build": "./scripts/build.js",
     "build:fixtures": "./scripts/build-fixtures.sh",
+    "build:all": "npm run build && npm run build:fixtures",
     "check": "npm run lint && npm run test"
   },
   "repository": {
