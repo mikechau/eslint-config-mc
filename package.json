@@ -9,7 +9,7 @@
     "warning.js"
   ],
   "scripts": {
-    "test": "ava --verbose",
+    "test": "ava --verbose --fail-fast",
     "lint": "eslint ./src ./test ./dist index.js",
     "build": "./scripts/build.js",
     "build:fixtures": "./scripts/build-fixtures.sh",
