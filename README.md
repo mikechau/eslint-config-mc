@@ -7,11 +7,12 @@ Based on [eslint-airbnb-config](https://github.com/airbnb/javascript/tree/master
 ## Installing
 
 ```bash
-# Required dependencies
+# Recommended dependencies
 npm install --save-dev eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint
 
 # Optional dependencies
 npm install --save-dev eslint-plugin-ava
+npm install --save-dev eslint-plugin-mocha
 
 # Install
 npm install --save-dev eslint-config-mc
@@ -26,6 +27,7 @@ npm install --save-dev eslint-config-mc
 - `eslint-config-mc/es5` - Linting for es5 only, raises errors.
 - `eslint-config-mc/es5-warning` - Linting for es5 only, raises warnings.
 - `eslint-config-mc/ava` - AVA config, raises errors.
+- `eslint-config-mc/mocha` - Mocha config, raises warnings.
 
 Edit your `.eslintrc.*` and extend from the appropriate config.
 
