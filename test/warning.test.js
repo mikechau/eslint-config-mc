@@ -5,17 +5,16 @@ var test = require('ava');
 var omit = require('lodash/omit');
 
 var airbnbConfig = require('./fixtures/eslint-config-airbnb-warning');
-var expectedOutput = omit(airbnbConfig, 'extends');
+var expectedOutput = omit(airbnbConfig, ['extends', 'globals']);
 
 var getEslintConfig = require('./helpers/getEslintConfig');
 var configPath = path.join(__dirname, '../warning.js');
 var rawConfig = getEslintConfig(configPath);
-var config = omit(rawConfig, 'extends');
+var config = omit(rawConfig, ['extends', 'globals']);
 
 test('matches expected eslint config', function(t) {
-  t.plan(8);
+  t.plan(7);
 
-  t.deepEqual(config.globals, expectedOutput.globals);
   t.deepEqual(config.env, expectedOutput.env);
   t.deepEqual(config.rules, expectedOutput.rules);
   t.deepEqual(config.parserOptions, expectedOutput.parserOptions);

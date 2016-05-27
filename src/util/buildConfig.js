@@ -9,7 +9,7 @@ module.exports = function buildConfig(configModule, params) {
   var withWarning = (opts.warning === undefined) ? false : opts.warning;
 
   var rawConfig = getEslintConfig(configModule);
-  var config = omit(rawConfig, 'extends');
+  var config = omit(rawConfig, ['extends', 'globals']);
 
   var results = {
     base: config

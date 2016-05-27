@@ -8,11 +8,10 @@ var baseFixture = require('../fixtures/eslint-config-airbnb');
 var warningFixture = require('../fixtures/eslint-config-airbnb-warning');
 
 test('base config matches expected eslint config', function(t) {
-  t.plan(8);
+  t.plan(7);
 
-  var expectedOutput = omit(baseFixture, 'extends');
+  var expectedOutput = omit(baseFixture, ['extends', 'globals']);
 
-  t.deepEqual(config.base.globals, expectedOutput.globals);
   t.deepEqual(config.base.env, expectedOutput.env);
   t.deepEqual(config.base.rules, expectedOutput.rules);
   t.deepEqual(config.base.parserOptions, expectedOutput.parserOptions);
@@ -24,11 +23,10 @@ test('base config matches expected eslint config', function(t) {
 });
 
 test('warning config matches expected eslint config', function(t) {
-  t.plan(8);
+  t.plan(7);
 
-  var expectedOutput = omit(warningFixture, 'extends');
+  var expectedOutput = omit(warningFixture, ['extends', 'globals']);
 
-  t.deepEqual(config.warning.globals, expectedOutput.globals);
   t.deepEqual(config.warning.env, expectedOutput.env);
   t.deepEqual(config.warning.rules, expectedOutput.rules);
   t.deepEqual(config.warning.parserOptions, expectedOutput.parserOptions);

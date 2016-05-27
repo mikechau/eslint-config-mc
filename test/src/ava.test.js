@@ -7,11 +7,10 @@ var config = require('../../src/ava');
 var baseFixture = require('../fixtures/eslint-config-ava');
 
 test('base config matches expected eslint config', function(t) {
-  t.plan(8);
+  t.plan(7);
 
-  var expectedOutput = omit(baseFixture, 'extends');
+  var expectedOutput = omit(baseFixture, ['extends', 'globals']);
 
-  t.deepEqual(config.base.globals, expectedOutput.globals);
   t.deepEqual(config.base.env, expectedOutput.env);
   t.deepEqual(config.base.rules, expectedOutput.rules);
   t.deepEqual(config.base.parserOptions, expectedOutput.parserOptions);
