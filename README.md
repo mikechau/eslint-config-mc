@@ -26,7 +26,7 @@ npm install --save-dev eslint-config-mc
 - `eslint-config-mc/warning` - The default config, but will raise warnings instead of errors.
 - `eslint-config-mc/es5` - Linting for es5 only, raises errors.
 - `eslint-config-mc/es5-warning` - Linting for es5 only, raises warnings.
-- `eslint-config-mc/ava` - AVA config, raises errors.
+- `eslint-config-mc/ava` - Ava config, raises errors.
 - `eslint-config-mc/mocha` - Mocha config, raises warnings.
 
 Edit your `.eslintrc.*` and extend from the appropriate config.
