@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.6.4] - 2016-05-27
+### Changed
+- Default config: `space-before-function-paren`, anonymous functions set to never.
+
 ## [0.6.3] - 2016-05-27
 ### Changed
 - Es5 config: `space-before-function-paren`, anonymous functions set to never.
