@@ -1,5 +1,6 @@
 {
   "rules": {
-    "func-names": "off"
+    "func-names": 0,
+    "vars-on-top": 0
   }
 }

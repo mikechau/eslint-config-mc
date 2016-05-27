@@ -2,6 +2,6 @@
 
 module.exports = {
   extends: [
-    './dist/airbnb/config.json'
+    './dist/airbnb/base.json'
   ]
 };
