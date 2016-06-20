@@ -6,7 +6,11 @@
   "files": [
     "dist",
     "index.js",
-    "warning.js"
+    "warning.js",
+    "es5.js",
+    "es5-warning.js",
+    "ava.js",
+    "mocha.js"
   ],
   "scripts": {
     "test": "ava --verbose --fail-fast",
